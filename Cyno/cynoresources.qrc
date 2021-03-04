@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>resources/defaultAvatar.jpg</file>
+        <file>resources/defaultBack.jpg</file>
+        <file>resources/defaultBack2.jpg</file>
+        <file>resources/sessionAvatar.jpg</file>
+        <file>resources/defaultMainBack.jpg</file>
+        <file>resources/defaultMainBack2.jpeg</file>
+        <file>resources/defaultSessionBack.jpg</file>
+        <file>resources/defaultSessionBack2.jpg</file>
+        <file>resources/defaultAvatarP.jpg</file>
+        <file>resources/sessionAvatarP.jpg</file>
+        <file>resources/defaultSessionBack3.jpg</file>
+    </qresource>
+</RCC>

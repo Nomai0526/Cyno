@@ -1,0 +1,39 @@
+#ifndef SESSIONWIDGET_H
+#define SESSIONWIDGET_H
+
+#include <QWidget>
+#include <QTcpSocket>
+#include <QListWidget>
+#include <QPushButton>
+#include <QTextEdit>
+#include <QGridLayout>
+#include <QStringList>
+#include <currentaccount.h>
+#include <QTime>
+#include <QDate>
+
+extern QTcpSocket *socketOfCyno;
+
+class sessionWidget : public QWidget
+{
+    Q_OBJECT
+public:
+    explicit sessionWidget(QWidget *parent = 0);
+    sessionWidget(currentAccount *cAccount,currentAccount *receiver);       //这个receiver是对话人
+    currentAccount *cAccount=NULL;
+    currentAccount *receiver
+    QListWidget *messageList = NULL;
+    QPushButton *sendPictureButton = NULL;
+    QPushButton *sendFileButton = NULL;
+    QPushButton *sendMessageButton = NULL;
+    QTextEdit *messageToSend =NULL;
+    QGridLayout *Layout=NULL;
+public slots:
+    void test();
+    void sendMessage(currentAccount *cAccount,currentAccount *receiver);
+signals:
+
+
+};
+
+#endif // SESSIONWIDGET_H
